@@ -2,32 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.form {
+  width: 223px;
+  background-color: #fafafa;
+  padding: 20px;
+  border: 2px solid #e7e7e7;
+  border-radius: 8px;
+  box-shadow: 4px 14px 17px -6px #958f8f;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.text {
+  border: 2px solid rgb(218 218 218);
+  width: -webkit-fill-available;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.cal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.equal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0fc80f;
+}
+:hover.equal {
+  background-color: #14f214;
+  color: white;
+}
+.del {
+  background-color: red;
+}
+:hover.del {
+  background-color: rgb(239, 10, 10);
+  color: white;
+}
+.btn {
+  background-color: #ffffff;
+  border: 2px solid rgb(218 218 218);
+}
+:hover.btn {
+  color: white;
+  background-color: black;
 }
